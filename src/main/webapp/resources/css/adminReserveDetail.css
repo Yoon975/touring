@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+/* -------------------- 기본 본문 스타일 -------------------- */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #f5f8ff;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+/* -------------------- 예약 상세 컨테이너 -------------------- */
+.reservation-detail {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+/* 제목 */
+.reservation-detail h2 {
+    text-align: center;
+    color: #003580;
+    margin: 30px 0 20px;
+}
+
+/* 예약 상세 정보 */
+.reservation-detail ul {
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    list-style: none;
+}
+
+.reservation-detail ul li {
+    font-size: 1em;
+    margin: 10px 0;
+    padding: 6px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.reservation-detail ul li:last-child {
+    border-bottom: none;
+}
+
+/* 링크 */
+.reservation-detail ul li a {
+    color: #0071c2;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.reservation-detail ul li a:hover {
+    text-decoration: underline;
+}
+
+/* 버튼 영역 */
+.reservation-detail .action-buttons {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.reservation-detail .action-buttons a,
+.reservation-detail .action-buttons input[type="submit"] {
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 8px 16px;
+    font-size: 0.95em;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    border: none;
+}
+
+/* 검색 결과 / 수정 버튼 */
+.reservation-detail .action-buttons a {
+    background-color: #0071c2;
+    color: white;
+}
+
+.reservation-detail .action-buttons a:hover {
+    background-color: #005fa3;
+    transform: translateY(-2px);
+}
+
+/* 예약 취소 버튼 */
+.reservation-detail .action-buttons input[type="submit"] {
+    background-color: #c20000;
+    color: white;
+}
+
+.reservation-detail .action-buttons input[type="submit"]:hover {
+    background-color: #9a0000;
+    transform: translateY(-2px);
+}
+
+
+/* 제목 */
+.reservation-detail h2 {
+    text-align: center;
+    color: #003580;       /* 쿨톤 블루 */
+    font-size: 1.8em;     /* 폰트 크기 조정 */
+    margin: 30px 0 20px;
+    font-weight: 700;     /* 굵기 */
+}

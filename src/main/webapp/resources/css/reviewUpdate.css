@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+/* ================================
+   리뷰 수정 페이지 (쿨톤 스타일)
+================================ */
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #f4f8fc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* 페이지 제목 */
+h2 {
+  text-align: center;
+  color: #1565c0;
+  margin-top: 60px;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+/* 폼 전체 영역 */
+form {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto 80px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 4px 12px rgba(0, 86, 179, 0.15);
+}
+
+/* 테이블 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+th {
+  width: 25%;
+  background-color: #e3f2fd;
+  color: #0d47a1;
+  padding: 14px;
+  text-align: center;
+  border-bottom: 2px solid #bbdefb;
+  font-weight: 600;
+}
+
+td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+}
+
+/* 텍스트 영역 */
+textarea {
+  width: 95%;
+  height: 120px;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: none;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+textarea:focus {
+  border-color: #1565c0;
+}
+
+/* 셀렉트 박스 */
+select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+select:focus {
+  border-color: #1565c0;
+}
+
+/* 버튼 */
+input[type="submit"],
+input[type="button"] {
+  background-color: #1e88e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-size: 15px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  background-color: #1565c0;
+  transform: scale(1.03);
+}
+
+/* 버튼 정렬 */
+form input[type="submit"],
+form input[type="button"] {
+  display: inline-block;
+}
+
+/* 링크 포함 시 */
+a {
+  color: #1e88e5;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #1565c0;
+  text-decoration: underline;
+}

@@ -1,0 +1,158 @@
+/* ===========================
+   기본 설정
+=========================== */
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #f5f8ff;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  color: #003580;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* ===========================
+   테이블 스타일
+=========================== */
+table {
+  border-collapse: collapse;
+  margin: 40px auto;
+  width: 80%;
+  max-width: 900px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 50, 0.1);
+  overflow: hidden;
+}
+
+th, td {
+  padding: 15px 18px;
+  border-bottom: 1px solid #e0e7ff;
+  text-align: left;
+}
+
+th {
+  width: 150px;
+  background-color: #f0f4ff;
+  color: #003580;
+  font-weight: 600;
+}
+
+td {
+  font-size: 0.95em;
+  line-height: 1.5em;
+}
+
+/* ===========================
+   버튼 스타일
+=========================== */
+input[type="button"] {
+  background-color: #0071c2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  margin: 6px;
+  font-size: 0.95em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+input[type="button"]:hover {
+  background-color: #005fa3;
+  transform: translateY(-1px);
+}
+
+/* ===========================
+   이미지 슬라이더 (Swiper)
+=========================== */
+.tour-swiper {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 80, 0.2);
+  position: relative;
+}
+
+.tour-swiper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #0071c2;
+}
+
+.swiper-pagination-bullet {
+  background: #0071c2;
+}
+
+/* ===========================
+   리뷰 영역
+=========================== */
+h3 {
+  margin-top: 50px;
+  font-size: 1.3em;
+}
+
+p {
+  text-align: center;
+  color: #555;
+}
+
+table + h3, table + p {
+  margin-top: 50px;
+}
+
+.review-table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 50, 0.1);
+}
+
+.review-table th {
+  background-color: #eaf0ff;
+  color: #003580;
+  width: 120px;
+}
+
+.review-table td {
+  border-bottom: 1px solid #e0e7ff;
+}
+
+/* ===========================
+   반응형
+=========================== */
+@media (max-width: 768px) {
+  table, .review-table {
+    width: 95%;
+    font-size: 0.9em;
+  }
+
+  th, td {
+    display: block;
+    width: 100%;
+  }
+
+  th {
+    background-color: #eaf0ff;
+  }
+
+  input[type="button"] {
+    width: 100%;
+    margin: 5px 0;
+  }
+}

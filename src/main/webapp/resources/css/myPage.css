@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #f8fbff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* 컨테이너 */
+.container {
+  max-width: 900px;
+  margin: 100px auto;
+  background-color: #ffffff;
+  padding: 50px 60px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 86, 179, 0.1);
+}
+
+/* 제목 */
+.container h2 {
+  text-align: center;
+  color: #0056b3;
+  font-size: 1.8em;
+  margin-bottom: 40px;
+}
+
+/* 테이블 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+  border-spacing: 0 12px;
+  margin-bottom: 40px;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px 18px;
+  background-color: #f9fbff;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+}
+
+th {
+  width: 180px;
+  background-color: #e9f2ff;
+  color: #003f8c;
+  font-weight: 600;
+}
+
+/* 상단 버튼 (비밀번호변경, 회원정보수정, 탈퇴) */
+.mypage-top-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.mypage-top-links .button-link {
+  display: inline-block;
+  padding: 8px 18px;
+  background-color: #0071c2;
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.mypage-top-links .button-link:hover {
+  background-color: #005fa3;
+  transform: scale(1.03);
+}
+
+/* 하단 링크 (찜 목록, 예약내역, 나의리뷰, 관리자 신청) */
+.mypage-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 0;
+}
+
+.mypage-links .button-link {
+  display: inline-block;
+  padding: 8px 18px;
+  background-color: #0071c2;
+  color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.mypage-links .button-link:hover {
+  background-color: #005fa3;
+  transform: scale(1.05);
+}
+
+.mypage-links .admin-status {
+  display: inline-block;
+  font-weight: 600;
+  color: #0056b3;
+  margin-right: 8px;
+}
+
+/* 관리자 신청 버튼 */
+.mypage-links a.button {
+  margin-left: 5px;
+}
+
+/* 마지막 테이블 행 하단 여백 */
+tr:last-child td {
+  margin-bottom: 20px;
+}
+
+/* 버튼 기본 스타일 */
+button, input[type="button"], a.button {
+  display: inline-block;
+  background-color: #0071c2;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 25px;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 2px 6px rgba(0, 113, 194, 0.25);
+}
+
+button:hover, a.button:hover {
+  background-color: #005fa3;
+  transform: scale(1.03);
+}

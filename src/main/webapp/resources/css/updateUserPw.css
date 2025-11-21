@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+/* 전체 컨테이너 */
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  background-color: #ffffff;
+  padding: 50px 60px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  color: #222;
+  font-family: 'Noto Sans KR', sans-serif;
+  box-sizing: border-box;
+}
+
+/* 입력 폼 */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* 입력 필드 */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 12px;
+  border: 1px solid #ccd4e0;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #0071c2;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 113, 194, 0.3);
+}
+
+/* 버튼 스타일 */
+input[type="submit"],
+input[type="button"],
+button {
+  display: inline-block;
+  background-color: #0071c2;
+  color: white;
+  border: none;
+  padding: 10px 26px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0, 113, 194, 0.25);
+  transition: all 0.3s;
+  vertical-align: middle;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover {
+  background-color: #005fa3;
+  transform: scale(1.03);
+}
+
+/* 버튼 영역 */
+.btn-area {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top:20px;
+}
+
+/* 초기에는 뒤로가기만 가운데 */
+#onlyBackBtn {
+  text-align: center;
+}
+
+/* 새 비밀번호 영역 */
+#newPwFields {
+  display: none;
+  flex-direction: column;
+  gap: 10px; 
+}
+
+/* 안내문 */
+p.small {
+  color: #666;
+  font-size: 13px;
+  margin: 4px 0 0 5px;
+  line-height: 1.5;
+}

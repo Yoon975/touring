@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+/* ================================
+   관리자 예약 리스트 (쿨톤 / 1200px 제한)
+================================ */
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #f5f8ff;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    color: #003580;
+    margin-top: 40px;
+}
+
+/* 전체 컨테이너 */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 검색 폼 */
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px 25px;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-form select,
+.search-form input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95em;
+}
+
+.search-form input[type="submit"] {
+    background-color: #0071c2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.search-form input[type="submit"]:hover {
+    background-color: #005fa3;
+}
+
+/* 예약 테이블 */
+.reserve-table {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto 60px;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.reserve-table th {
+    background-color: #0071c2;
+    color: white;
+    padding: 12px;
+    font-size: 0.95em;
+}
+
+.reserve-table td {
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+}
+
+.reserve-table tr:hover {
+    background-color: #f0f6ff;
+}
+
+.reserve-table a {
+    color: #0071c2;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.reserve-table a:hover {
+    text-decoration: underline;
+}
+
+/* 검색 결과 없음 */
+.no-result {
+    text-align: center;
+    color: #666;
+    margin-top: 30px;
+    font-size: 1.1em;
+}

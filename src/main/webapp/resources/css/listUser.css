@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+/* 전체 컨테이너 */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 테이블 스타일 */
+.container table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 0.95em;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+}
+
+/* 테이블 헤더 */
+.container th {
+    background-color: #0071c2; /* 쿨톤 파랑 */
+    color: #ffffff;
+    padding: 12px 0;
+    font-weight: 600;
+}
+
+/* 테이블 행 */
+.container td {
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* 링크 스타일 */
+.container a {
+    color: #0071c2;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.container a:hover {
+    text-decoration: underline;
+    color: #005fa3;
+}
+
+/* 관리자 승인/거부 버튼 스타일 */
+.container td a {
+    margin: 0 5px;
+    padding: 4px 8px;
+    background-color: #f0f4f8;
+    border-radius: 6px;
+    border: 1px solid #c0cde0;
+    font-size: 0.85em;
+}
+
+.container td a:hover {
+    background-color: #0071c2;
+    color: white;
+    border-color: #005fa3;
+    transition: 0.2s;
+}
+
+/* 짝수/홀수 행 배경 */
+.container tr:nth-child(even) {
+    background-color: #f8fbff;
+}
+
+/* 테이블 제목 (선택적으로 상단 h2) */
+.container h2 {
+    margin-bottom: 20px;
+    color: #003580;
+    text-align: center;
+}

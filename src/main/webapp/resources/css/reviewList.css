@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+/* ==============================
+   리뷰 리스트 (쿨톤 스타일)
+============================== */
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: #f5f8ff; /* 밝은 쿨톤 배경 */
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+  color: #0056b3; /* 메인 포인트 블루 */
+  margin-top: 50px;
+  font-size: 1.8em;
+}
+
+/* ==============================
+   테이블 전체
+============================== */
+table {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 86, 179, 0.15);
+}
+
+/* ==============================
+   테이블 헤더
+============================== */
+th {
+  background-color: #0071c2; /* 시원한 블루 */
+  color: #ffffff;
+  padding: 14px;
+  text-align: center;
+  font-weight: 600;
+  border-bottom: 2px solid #005fa3;
+  font-size: 15px;
+}
+
+/* ==============================
+   테이블 셀
+============================== */
+td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #e3e8f0;
+  font-size: 15px;
+  color: #333;
+}
+
+/* ==============================
+   짝수행 배경
+============================== */
+tr:nth-child(even) {
+  background-color: #f0f6ff;
+}
+
+/* ==============================
+   마우스 오버 효과
+============================== */
+tr:hover {
+  background-color: #e6f1ff;
+  transition: 0.2s;
+}
+
+/* ==============================
+   리뷰 없음 문구
+============================== */
+p {
+  text-align: center;
+  font-size: 17px;
+  color: #666;
+  margin-top: 60px;
+}
+
+/* ==============================
+   버튼
+============================== */
+input[type="button"] {
+  display: block;
+  margin: 40px auto;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: 0 3px 8px rgba(0, 123, 255, 0.25);
+  transition: all 0.2s ease;
+}
+
+input[type="button"]:hover {
+  background-color: #0056b3;
+  transform: scale(1.03);
+}
+

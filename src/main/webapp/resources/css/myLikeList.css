@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+/* 좋아요 내역 기본 테이블 쿨톤 스타일 (최대 1000px 제한) */
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #f8fbff; /* 밝은 쿨톤 배경 */
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* 제목 */
+h2 {
+  text-align: center;
+  margin-top: 80px;
+  color: #0056b3;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+/* 컨테이너 (최대 1000px) */
+.container {
+  max-width: 1000px;
+  margin: 0 auto 60px;
+  padding: 0 20px;
+}
+
+/* 테이블 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 86, 179, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 40px auto;
+}
+
+th, td {
+  text-align: center;
+  padding: 14px 12px;
+  border-bottom: 1px solid #e0e6f0;
+  font-size: 15px;
+}
+
+th {
+  background-color: #e9f2ff;
+  color: #003f8c;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f6f9ff;
+}
+
+tr:hover {
+  background-color: #e6f1ff;
+}
+
+/* 링크 */
+a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* 버튼 */
+input[type="button"] {
+  display: block;
+  margin: 40px auto 60px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 26px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0, 123, 255, 0.25);
+  transition: all 0.3s;
+}
+
+input[type="button"]:hover {
+  background-color: #0056b3;
+  transform: scale(1.03);
+}

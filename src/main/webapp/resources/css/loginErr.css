@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #f8fbff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  margin: 100px auto;
+  text-align: center;
+  color: #333;
+}
+
+h1 {
+  color: #0056b3;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* 폼 전체 */
+form {
+  display: inline-block;
+  text-align: left;
+  padding: 10px 14px;
+}
+
+/* 라벨을 위에 배치 (세로형 정렬) */
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+/* 입력창 */
+form input[type="text"],
+form input[type="password"] {
+  width: 440px;
+  padding: 8px 10px;
+  height: 36px;
+  box-sizing: border-box;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 16px; /* 입력칸 사이 간격 */
+}
+
+form input::placeholder {
+  color: #999;
+}
+
+/* 로그인 버튼 */
+form input[type="submit"] {
+  display: block;
+  width: 440px;
+  height: 38px;
+  margin-top: 5px;
+  background-color: #0078d7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+form input[type="submit"]:hover {
+  background-color: #005fa3;
+}

@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+/* 기본 설정 */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #f5f8ff;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    color: #003580;
+    margin-top: 40px;
+}
+
+/* 예약 정보 박스 */
+.reserve-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    padding: 30px 40px;
+}
+
+/* 예약 정보 목록 */
+.reserve-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.reserve-info li {
+    font-size: 1em;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reserve-info li:last-child {
+    border-bottom: none;
+}
+
+.reserve-info a {
+    color: #0071c2;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.reserve-info a:hover {
+    text-decoration: underline;
+}
+
+/* 버튼 영역 */
+.btn-group {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.inline-form {
+    display: inline;
+}
+
+/* 버튼 기본 스타일 */
+.btn-primary, .btn-cancel, .btn-back {
+    display: inline-block;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+/* 예약 수정 */
+.btn-primary {
+    background-color: #0071c2;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #005fa3;
+    transform: translateY(-2px);
+}
+
+/* 예약 취소 */
+.btn-cancel {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.btn-cancel:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+}
+
+/* 목록으로 */
+.btn-back {
+    background-color: #ccc;
+    color: #222;
+}
+
+.btn-back:hover {
+    background-color: #bbb;
+    transform: translateY(-2px);
+}
+
+/* 반응형 */
+@media (max-width: 600px) {
+    .reserve-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .reserve-info li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

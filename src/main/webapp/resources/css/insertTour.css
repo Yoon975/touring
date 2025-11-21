@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+@charset "UTF-8";
+
+/* ============================
+   관광지 등록 페이지 (쿨톤)
+============================ */
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #f5faff; /* 밝은 쿨톤 배경 */
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 50px;
+  color: #1d4ed8; /* 진한 파란색 */
+  font-weight: 700;
+}
+
+/* 전체 레이아웃 */
+form {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 테이블 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #e5e7eb;
+  vertical-align: middle;
+}
+
+td:first-child {
+  width: 180px;
+  background-color: #f0f6ff;
+  font-weight: bold;
+  color: #1e3a8a;
+  text-align: center;
+}
+
+/* 입력 요소 */
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 4px rgba(59, 130, 246, 0.4);
+  outline: none;
+}
+
+/* 파일 업로드 */
+input[type="file"] {
+  padding: 6px;
+  border: none;
+}
+
+/* 버튼 영역 */
+input[type="submit"],
+input[type="button"] {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  background-color: #1e40af;
+}
+
+/* 뒤로가기 버튼 간격 */
+input[type="button"] {
+  margin-right: 8px;
+}
+
+/* 안내 문구 */
+small {
+  color: #64748b;
+  font-size: 13px;
+}

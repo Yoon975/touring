@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+footer {
+  background-color: #f5f9ff;
+  color: #333;
+  padding: 40px 20px 20px 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px; /* 최대 너비 고정 */
+  margin: 0 auto;    /* 중앙 정렬 */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d8e2f0;
+}
+
+.footer1, .footer2 {
+  flex: 1 1 300px;
+  margin: 10px;
+}
+
+.footer1 p, .footer2 p {
+  margin: 6px 0;
+}
+
+.footer1 b, .footer2 b {
+  color: #1e88e5;
+}
+
+.footer2 a {
+  text-decoration: none;
+  color: #1e88e5;
+  transition: color 0.2s ease;
+}
+
+.footer2 a:hover {
+  color: #1565c0;
+}
+
+footer > div:last-child {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #888;
+}
+.footer-spacer {
+    height: 400px; /* 검색 폼과 푸터 사이 공간 */
+}

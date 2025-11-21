@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+/* ------------------ 메뉴바 전체 ------------------ */
+.menu-bar {
+  max-width: 1550px;
+  margin: 0 auto;               /* 화면 가운데 정렬 */
+  background-color: #f8f9fa;    /* 연한 배경 */
+  padding: 10px 20px;
+  list-style: none;
+  border-bottom: 1px solid #ddd;
+  font-family: 'Arial', sans-serif;
+
+  display: flex;
+  justify-content: space-between; /* 왼쪽/오른쪽 분리 */
+  align-items: center;
+}
+
+/* ------------------ 왼쪽/오른쪽 그룹 ------------------ */
+.menu-bar .menu-left,
+.menu-bar .menu-right {
+  display: flex;
+  gap: 15px;        /* 메뉴 간격 */
+  align-items: center;
+}
+
+/* ------------------ 메뉴 항목 ------------------ */
+.menu-bar li {
+  position: relative;
+}
+
+.menu-bar li a {
+  color: #003580; /* 쿨톤 파랑 */
+  text-decoration: none;
+  font-weight: 500;
+  padding: 5px 8px;
+  display: block;
+}
+
+.menu-bar li a:hover {
+  background-color: rgba(0, 53, 128, 0.1);
+  border-radius: 4px;
+}
+
+/* ------------------ 서브메뉴 ------------------ */
+.menu-bar .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  list-style: none;
+  padding: 5px 0;
+  min-width: 150px;
+  z-index: 1000;
+}
+
+.menu-bar li:hover > .submenu {
+  display: block;
+}
+
+.menu-bar .submenu li a {
+  padding: 5px 10px;
+  color: #003580;
+}
+
+.menu-bar .submenu li a:hover {
+  background-color: rgba(0, 53, 128, 0.1);
+  border-radius: 3px;
+}
+
+/* ------------------ 실시간 검색 ------------------ */
+.realtime-menu {
+  /* 오른쪽 그룹 안에서 마지막 메뉴 위치 */
+}
+
+/* ------------------ 미니 그래프 ------------------ */
+#mini-graph-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; 
+  width: 100px;
+  height: 60px;
+  z-index: 1000;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  border-radius: 5px;
+  background: #fff;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  transform-origin: bottom right; /* 오른쪽 아래 기준 확대 */
+  cursor: pointer;
+}
+
+#miniGraph {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+.nav-spacer {
+    height: 100px; /* 검색 폼과 푸터 사이 공간 */
+}

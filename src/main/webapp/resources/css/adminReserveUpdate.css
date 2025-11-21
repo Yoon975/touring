@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+/* 기본 스타일 */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #f5f8ff;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    color: #003580;
+    margin-top: 40px;
+}
+
+/* 폼 컨테이너 */
+.update-form {
+    background-color: white;
+    width: 80%;
+    max-width: 600px;
+    margin: 30px auto 60px;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+}
+
+/* 각 입력 그룹 */
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    flex: 0 0 25%;
+    font-weight: bold;
+    color: #003580;
+}
+
+.form-group span,
+.form-group input {
+    flex: 0 0 70%;
+    font-size: 1em;
+}
+
+.form-group input[type="date"],
+.form-group input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* 버튼 그룹 */
+.btn-group {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn-submit {
+    background-color: #0071c2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: #005fa3;
+    transform: translateY(-2px);
+}
+
+.btn-back {
+    display: inline-block;
+    background-color: #ccc;
+    color: #222;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: background-color 0.2s;
+}
+
+.btn-back:hover {
+    background-color: #bbb;
+}
+
+/* 반응형 */
+@media (max-width: 600px) {
+    .form-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .form-group label {
+        margin-bottom: 5px;
+    }
+    .update-form {
+        width: 90%;
+        padding: 20px;
+    }
+}

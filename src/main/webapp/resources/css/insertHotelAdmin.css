@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+/* =============== 기본 설정 =============== */
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #f4f8fb;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+  color: #0066cc;
+  margin: 40px 0 30px;
+}
+
+/* =============== 폼 영역 =============== */
+form {
+  width: 70%;
+  max-width: 800px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 102, 204, 0.15);
+  padding: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+form:hover {
+  box-shadow: 0 6px 20px rgba(0, 102, 204, 0.25);
+}
+
+/* =============== 테이블 구조 =============== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 12px 10px;
+  border-bottom: 1px solid #e3f0fb;
+  vertical-align: middle;
+}
+
+td:first-child {
+  width: 25%;
+  background-color: #eaf5ff;
+  font-weight: bold;
+  color: #004d99;
+  text-align: center;
+}
+
+/* =============== 입력 요소 =============== */
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #c5dfff;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.2s;
+  font-size: 15px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #0066cc;
+  box-shadow: 0 0 5px rgba(0, 102, 204, 0.2);
+}
+
+textarea {
+  resize: none;
+}
+
+/* =============== 버튼 =============== */
+input[type="submit"],
+input[type="button"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  background-color: #0056b3;
+}
+
+/* =============== 파일 업로드 =============== */
+input[type="file"] {
+  border: none;
+  background: #f0f6ff;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+small {
+  color: #666;
+  font-size: 13px;
+}
+
+/* =============== 반응형 =============== */
+@media (max-width: 768px) {
+  form {
+    width: 90%;
+    padding: 20px;
+  }
+
+  td:first-child {
+    width: 100%;
+    display: block;
+    text-align: left;
+  }
+
+  td:last-child {
+    display: block;
+    width: 100%;
+  }
+
+  input[type="submit"],
+  input[type="button"] {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

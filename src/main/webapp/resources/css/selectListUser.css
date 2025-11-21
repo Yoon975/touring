@@ -1,0 +1,220 @@
+@charset "UTF-8";
+
+/* 기본 설정 */
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #f5f9ff;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+/* 본문 컨테이너 (이미 중앙 정렬되어 있음) */
+.content-wrapper {
+  padding: 20px 0;
+}
+
+/* 나의 찜 버튼 영역 */
+#myLikeBtnContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin: 15px 20px;
+}
+
+#myLikeBtn {
+  background-color: #0071c2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+#myLikeBtn:hover {
+  background-color: #005fa3;
+  transform: translateY(-2px);
+}
+
+/* 검색 폼 전체 */
+#searchForm {
+  display: flex;
+  flex-direction: column; /* ✅ 두 줄로 배치 */
+  align-items: center;
+  gap: 12px;
+  margin: 25px auto 40px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* 윗줄 (숙소명~최대가격) */
+.search-row-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* 아랫줄 (체크인~초기화) */
+.search-row-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* 입력창 공통 */
+#searchForm input[type="text"],
+#searchForm input[type="number"],
+#searchForm select {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #bcd3e8;
+  font-size: 0.95em;
+  box-sizing: border-box;
+}
+
+/* 검색 버튼 */
+#searchForm input[type="submit"] {
+  background-color: #0071c2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+#searchForm input[type="submit"]:hover {
+  background-color: #005fa3;
+}
+
+/* ✅ 초기화 버튼 (투어 페이지와 동일) */
+#searchForm input[type="button"] {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+#searchForm input[type="button"]:hover {
+  background-color: #5a6268;
+}
+
+
+/* 카테고리 버튼 */
+.category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 0 auto 30px;
+}
+
+.category-buttons a button {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: none;
+  background-color: #e7f1ff;
+  color: #0071c2;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.category-buttons a button:hover:not(:disabled) {
+  background-color: #0071c2;
+  color: #fff;
+}
+
+.category-buttons a button:disabled {
+  background-color: #0071c2;
+  color: white;
+}
+
+/* 호텔 리스트 (4열 고정, 중앙정렬) */
+.hotel-list {
+  display: grid;
+  grid-template-columns: repeat(4, 260px); /* 카드 폭 고정 */
+  gap: 20px; /* 여백 고정 */
+  justify-content: center; /* 전체 가운데 정렬 */
+  margin: 0 auto 50px;
+  max-width: 1200px; /* body 폭 제한 */
+}
+
+/* 호텔 카드 */
+.hotel-card {
+  width: 260px;   /* 고정 폭 */
+  height: 320px;  /* 고정 높이 */
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hotel-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* 호텔 이미지 */
+.hotel-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+/* 호텔 정보 */
+.hotel-info {
+  padding: 12px;
+  text-align: center;
+}
+
+.hotel-info h4 {
+  font-size: 1.05em;
+  margin: 6px 0;
+  color: #003580;
+}
+
+.hotel-info p {
+  margin: 3px 0;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.hotel-info .price {
+  font-weight: 600;
+  color: #0071c2;
+}
+
+/* 찜 버튼 */
+.hotel-info form button {
+  margin-top: 6px;
+  width: 100%;
+  font-size: 0.95em;
+  background-color: #0071c2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.hotel-info form button:hover {
+  background-color: #005fa3;
+}

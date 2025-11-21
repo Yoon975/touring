@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+@charset "UTF-8";
+
+/* --- 관광지 검색폼 --- */
+.tour-search-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin: 30px auto;
+    width: 80%;
+    max-width: 1000px;
+}
+
+/* --- 관광지 등록 버튼 컨테이너 --- */
+.register-btn-container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-register {
+    background-color: #0071c2;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-register:hover {
+    background-color: #005fa3;
+}
+
+.tour-search-form input[type="text"],
+.tour-search-form select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.tour-search-form button,
+.tour-search-form input[type="button"] {
+    background-color: #0071c2;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.tour-search-form button:hover,
+.tour-search-form input[type="button"]:hover {
+    background-color: #005fa3;
+}
+
+/* --- 카테고리 버튼 --- */
+.tour-category-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.tour-category-buttons button {
+    background-color: #0071c2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.tour-category-buttons button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.tour-category-buttons button:hover:enabled {
+    background-color: #005fa3;
+}
+
+/* --- 관광지 리스트 테이블 --- */
+.tour-list-table {
+    max-width: 1000px;
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.tour-list-table th,
+.tour-list-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.tour-list-table th {
+    background-color: #f2f2f2;
+    color: #003580;
+}

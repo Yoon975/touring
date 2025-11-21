@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+/* 전체 컨테이너 */
+.container {
+  max-width: 800px;
+  margin: 60px auto;
+  background-color: #ffffff;
+  padding: 50px 60px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  color: #222;
+  font-family: 'Noto Sans KR', sans-serif;
+  box-sizing: border-box;
+}
+
+/* 제목 */
+h2 {
+  text-align: center;
+  color: #003580;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #0071c2;
+  padding-bottom: 10px;
+}
+
+/* 입력 폼 */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* 입력 라벨 및 필드 */
+label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="text"] {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px 12px;
+  border: 1px solid #ccd4e0;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus {
+  border-color: #0071c2;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 113, 194, 0.3);
+}
+
+/* 안내문 */
+p.small {
+  color: #666;
+  font-size: 13px;
+  margin: 4px 0 0 5px;
+  line-height: 1.5;
+}
+
+/* 버튼 영역 */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 35px;
+}
+
+/* 버튼 스타일 */
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  width: 140px;
+  padding: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+/* 제출 버튼 */
+input[type="submit"] {
+  background-color: #0071c2;
+  color: #fff;
+}
+
+input[type="submit"]:hover {
+  background-color: #005fa3;
+  transform: translateY(-2px);
+}
+
+/* 리셋 버튼 */
+input[type="reset"] {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+input[type="reset"]:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-2px);
+}
+
+/* 뒤로가기 버튼 */
+input[type="button"] {
+  background-color: #ffffff;
+  color: #0071c2;
+  border: 1px solid #0071c2;
+}
+
+input[type="button"]:hover {
+  background-color: #e8f3ff;
+  transform: translateY(-2px);
+}

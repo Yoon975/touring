@@ -1,0 +1,104 @@
+/* insertUser.css */
+
+/* 전체 컨테이너 */
+.container {
+    width: 600px;
+    margin: 20px auto;
+    font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* 제목 h2 스타일 */
+h2 {
+    font-size: 1.8em;
+    color: #003580;
+    text-align: left;
+    margin-bottom: 15px; /* 폼과의 간격 */
+}
+
+/* 전체 폼 */
+#signupForm {
+    display: flex;
+    flex-direction: column;
+    gap: 3px; /* 항목 간 간격 */
+}
+
+.small {
+	font-size: 12px;       /* 글씨 작게 */
+	color: #888888;        /* 연한 회색 */
+}
+
+/* 아이디 + 중복 체크 한 줄 */
+.id-check-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.id-check-group input[type="text"] {
+    flex: 1;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.id-check-group input[type="button"] {
+    flex: 0 0 auto;
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+    background-color: #0071c2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.id-check-group input[type="button"]:hover {
+    background-color: #005fa3;
+}
+
+/* 일반 항목들을 한 줄로 배치 */
+#signupForm > input[type="text"],
+#signupForm > input[type="password"] {
+    width: 100%;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 0.95em;
+    margin-bottom: 5px;
+}
+
+/* 버튼 영역 */
+.form-buttons {
+    display: flex;
+    justify-content: space-between; /* 좌우 배치 */
+    margin-top: 10px;
+}
+
+.form-buttons input[type="submit"],
+.form-buttons input[type="reset"] {
+    width: 48%;
+    padding: 8px 0;
+    border-radius: 6px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #0071c2;
+    color: white;
+    transition: background-color 0.2s;
+}
+
+.form-buttons input[type="submit"]:hover,
+.form-buttons input[type="reset"]:hover {
+    background-color: #005fa3;
+}
+
+/* ID 체크 결과 텍스트 */
+#idCheckResult {
+    font-size: 0.9em;
+    margin: 0;
+    height: 18px; /* 공간 고정 */
+}

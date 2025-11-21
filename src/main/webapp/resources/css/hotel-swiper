@@ -1,0 +1,24 @@
+.hotel-swiper {
+  width: 100%; /* 테이블 셀 너비에 맞춤 */
+  height: 300px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.hotel-swiper .swiper-wrapper {
+  display: flex;
+}
+
+.hotel-swiper .swiper-slide {
+  flex-shrink: 0;
+  width: 100% !important; /* 한 장씩 슬라이드 */
+  height: 100%;
+  text-align: center;
+}
+
+.hotel-swiper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

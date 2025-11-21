@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+/* ================================
+   예약하기 페이지 스타일
+================================ */
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* 폼 전체 */
+form {
+  max-width: 500px;
+  background: #fff;
+  margin: 40px auto;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.15);
+}
+
+/* 각 입력 영역 */
+form p {
+  margin: 20px 0;
+  font-size: 1.05em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form p input[type="text"],
+form p input[type="date"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+/* ===== 버튼 스타일 ===== */
+input[type="submit"] {
+  background-color: #007bff; /* 쿨톤 블루 */
+  border: none;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3; /* hover 시 진한 블루 */
+}
+
+input[type="button"] {
+  background-color: #999;
+  border: none;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="button"]:hover {
+  background-color: #b1b1b1;
+}
+
+/* 버튼 영역 */
+form a {
+  text-decoration: none;
+}
+
+form a input[type="button"] {
+  background-color: #999;
+  margin-left: 10px;
+}
+
+form a input[type="button"]:hover {
+  background-color: #b1b1b1;
+}
+
+/* 예약 불가 알림 */
+p[style*="color:red"] {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+
+/* ================================
+   h2 스타일 (reserveInsert 전용)
+================================ */
+.reserve-insert h2 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;      /* 글씨 굵기 통일 */
+    color: #007bff;
+    font-size: 1.8em;
+    text-align: center;
+    margin-top: 30px;
+}

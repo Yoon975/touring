@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+/* reserveUpdate.css */
+
+/* body 기본 스타일 */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #f5f8ff;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+/* 헤더, 네비 포함 후 본문 여백 */
+h2 {
+    text-align: center;
+    color: #003580;
+    margin-top: 30px;
+}
+
+/* 에러 메시지 */
+p[style*="color:red"] {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* 예약 수정 폼 */
+form {
+    background-color: white;
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto 50px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    font-size: 1em;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="date"] {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 0.95em;
+    width: 180px;
+}
+
+form input[readonly] {
+    background-color: #e0e0e0;
+    color: #555;
+}
+
+/* 버튼 스타일 */
+form input[type="submit"],
+form input[type="button"] {
+    background-color: #0071c2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 0;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    width: 100%;
+}
+
+form input[type="submit"]:hover,
+form input[type="button"]:hover {
+    background-color: #005fa3;
+    transform: translateY(-2px);
+}
+
+/* 뒤로가기 버튼 */
+a input[type="button"] {
+    background-color: #999;
+}
+
+a input[type="button"]:hover {
+    background-color: #777;
+}
+
+/* Flatpickr 입력 필드 */
+.flatpickr-input {
+    width: 180px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 0.95em;
+}
+
+.price-wrap {
+    display: inline-flex;
+    align-items: center;
+}
+
+.price-wrap input {
+    width: 120px; /* 필요에 따라 조정 */
+    margin: 0;
+}
+
+.price-wrap span {
+    margin-left: 2px; /* 아주 작은 간격만 */
+}

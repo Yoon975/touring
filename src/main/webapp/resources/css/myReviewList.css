@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+/* ================================
+   리뷰 내역 페이지 스타일 (쿨톤)
+================================ */
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #f8fbff; /* 밝은 쿨톤 배경 */
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* 제목 */
+h2.page-title {
+  text-align: center;
+  margin-top: 80px;
+  color: #0056b3;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+/* =============================
+   컨테이너 (최대 너비 1000px)
+============================= */
+.review-container {
+  max-width: 1000px;
+  margin: 0 auto 60px;
+  padding: 0 15px;
+}
+
+/* =============================
+   테이블 스타일
+============================= */
+.review-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 40px auto;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 86, 179, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.review-table th,
+.review-table td {
+  padding: 14px 12px;
+  text-align: center;
+  border-bottom: 1px solid #e0e6f0;
+}
+
+.review-table th {
+  background-color: #e9f2ff;
+  color: #003f8c;
+  font-weight: bold;
+}
+
+.review-table tr:nth-child(even) {
+  background-color: #f6f9ff;
+}
+
+.review-table tr:hover {
+  background-color: #e6f1ff;
+}
+
+/* =============================
+   링크 및 텍스트
+============================= */
+.review-table a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.review-table a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* =============================
+   버튼
+============================= */
+
+button, input[type="button"] {
+  display: block;
+  margin: 40px auto 60px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0, 123, 255, 0.25);
+  transition: all 0.3s;
+}
+
+button:hover, input[type="button"]:hover {
+  background-color: #0056b3;
+  transform: scale(1.03);
+}
+
+a {
+  text-decoration: none;
+}
+/* =============================
+   빈 리뷰 메시지
+============================= */
+.no-review-message td {
+  color: #777;
+  font-style: italic;
+  background-color: #fafcff;
+  padding: 20px;
+}

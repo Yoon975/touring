@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #f8fbff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* ✅ 본문 중앙정렬 + 폭 제한 */
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* 검색 영역 */
+.search-container {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.search-form {
+  display: inline-flex;
+  gap: 10px;
+}
+
+.search-input, .region-select {
+  padding: 8px 12px;
+  border: 1px solid #bcd3e8;
+  border-radius: 6px;
+}
+
+.btn-search, .btn-reset {
+  background-color: #3d8bfd;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.btn-reset {
+  background-color: #6c757d;
+}
+
+.btn-search:hover {
+  background-color: #2f73d9;
+}
+
+.btn-reset:hover {
+  background-color: #5a6268;
+}
+
+/* 카테고리 버튼 */
+.category-buttons {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.category-buttons button {
+  background-color: #e7f1ff;
+  border: 1px solid #c9e0ff;
+  color: #2f73d9;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin: 4px;
+  cursor: pointer;
+}
+
+.category-buttons button:disabled {
+  background-color: #3d8bfd;
+  color: white;
+  cursor: default;
+}
+
+/* 결과 없음 */
+.no-result {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 18px;
+  color: #777;
+}
+
+/* 관광지 리스트 (호텔 카드와 동일 스타일) */
+.tour-list {
+  display: grid;
+  grid-template-columns: repeat(4, 260px); /* 카드 폭 고정 */
+  gap: 20px; /* 카드 간격 */
+  justify-content: center; /* 중앙 정렬 */
+  margin: 0 auto 50px;
+  max-width: 1200px;
+}
+
+/* 관광지 카드 */
+.tour-card {
+  width: 260px;   /* 카드 폭 고정 */
+  height: 320px;  /* 카드 높이 고정 */
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tour-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* 카드 내부 링크 밑줄 제거 */
+.tour-card a,
+.tour-card a:hover,
+.tour-card a:focus,
+.tour-card a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 카드 이미지 */
+.tour-image {
+  width: 100%;
+  height: 160px; /* 호텔 카드와 동일 높이 */
+  overflow: hidden;
+}
+
+.tour-image img {
+  width: 100%;
+  height: 100%; /* 이미지 영역 꽉 차게 */
+  object-fit: cover;
+  display: block;
+}
+
+.no-image {
+  width: 100%;
+  height: 160px;
+  background-color: #d9e8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6c757d;
+  font-size: 14px;
+}
+
+/* 카드 정보 영역 */
+.tour-info {
+  padding: 12px;
+  text-align: center;
+  flex: 1;
+}
+
+.tour-info h3 {
+  font-size: 1.05em;
+  margin: 6px 0;
+  color: #003580;
+}
+
+.tour-info .region {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.tour-info .hit {
+  font-size: 0.85em;
+  color: #8a9aae;
+}

@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+header {
+  max-width:1600px;
+  margin: 0 auto;
+  background-color: #003580; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+  color: white;
+  position: static;
+  top: 0;
+  z-index: 100;
+}
+
+header img {
+  width: 150px;
+  margin: 10px;
+  
+}
+
+.site-title {
+  font-size: 1.8em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+header a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}

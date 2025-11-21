@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #f5f9ff;
+  color: #333;
+}
+
+.container {
+  max-width: 1000px; /* 최대 너비 고정 */
+  margin: 60px auto;  /* 가운데 정렬 */
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.inquiry-logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.inquiry-logo img {
+  width: 120px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.inquiry-logo img:hover {
+  transform: scale(1.05);
+}
+
+.contact-text {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 40px;
+  color: #1e88e5;
+}
+
+.qna p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #1565c0;
+}
+
+.qna-item {
+  background-color: #fff;
+  border: 1px solid #c7d4e5;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  padding: 12px 18px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.question {
+  font-weight: bold;
+  color: #1e88e5;
+  margin-bottom: 8px;
+}
+
+.answer {
+  color: #333;
+  line-height: 1.5;
+}

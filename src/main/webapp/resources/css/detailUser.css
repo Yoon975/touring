@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+/* 전체 페이지 기본 설정 */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #f5f9ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* 컨테이너 중앙 고정 */
+.container {
+    max-width: 1200px;
+    margin: 60px auto; /* 상하 60px 여백 */
+    padding: 0 20px;
+}
+
+/* 제목 */
+.container h2 {
+    text-align: center;
+    color: #003580;
+    margin: 30px 0 20px;
+}
+
+/* 테이블 기본 스타일 */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    border: 1px solid #c7d4e5;
+}
+
+/* 테이블 셀 스타일 */
+table th, table td {
+    padding: 14px 18px;
+    border: 1px solid #d8e2f0;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+/* 제목 셀 강조 */
+table th {
+    width: 180px;
+    background-color: #eaf2fc;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 짝수행 배경색 */
+table tr:nth-child(even) {
+    background-color: #f7fbff;
+}
+
+/* 버튼 스타일 */
+input[type="button"] {
+    background-color: #1e88e5;
+    color: #fff;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 6px;
+    transition: background 0.2s ease;
+}
+
+input[type="button"]:hover {
+    background-color: #1565c0;
+}
+
+/* 마지막 버튼 영역 중앙 정렬 */
+table td[colspan="2"] {
+    text-align: center;
+}
